@@ -9,16 +9,16 @@ export default function Home() {
           <img style={{ position: "absolute", top: 0, left: 10 }} id="pslogo" src="rygbdocs.svg" width="260" height="35" />
         </div>
       </div>
-      <div style={{ width: "99%", display: "grid", gridTemplateColumns: "300px auto", margin: "auto", marginTop: "60px" }}>
+      <div style={{ width: "99%", display: "grid", gridTemplateColumns: "300px auto", margin: "auto", marginTop: "60px", marginBottom: "10px" }}>
         <div id="sidenavbar" className={styles.leftPanel}>
           <h3>DOCUMENTS</h3>
           <button className={styles.dsbutton} style={{marginTop: "5px"}}>RYGB Privacy Policy</button>
         </div>
-        <div id="content" style={{ width: "70%", margin: "auto" }} className={styles.content}>
+        <div id="content" style={{ width: "60%", margin: "auto" }} className={styles.content}>
           <div id="pp">
             <h1 className={styles.header}>RYGB Privacy Policy</h1>
             <p className={styles.subheader}>Last Updated 11/21/2023</p>
-            <p className={styles.subheader}>Applies to your RYGB Account, "My RYGB Account" Dashboard</p>
+            <p className={styles.subheader}>Applies to your RYGB Account, &quot;My RYGB Account&quot; Dashboard</p>
             <div className={styles.divider} style={{ marginBottom: "20px" }}></div>
             <div style={{ textAlign: "center" }}>
               <h1 className={styles.tapeHeader}>TLDR</h1>
@@ -35,7 +35,7 @@ export default function Home() {
               <h3>Cookies:</h3>
               <p>Cookies are used to keep you signed in; opting out may affect account access.</p>
               <h3>User Rights:</h3>
-              <p>Manage your personal information through the "My RYGB Account" dashboard.</p>
+              <p>Manage your personal information through the &quot;My RYGB Account&quot; dashboard.</p>
               <h3>Compliance:</h3>
               <p>GDPR and CCPA compliant; users can delete all data with one click.</p>
               <h3>Contact Us:</h3>
@@ -43,7 +43,7 @@ export default function Home() {
               <h3>We'll inform you of any changes to this policy when you access our services.</h3>
             </div>
             <div className={styles.divider}></div>
-            <p className={styles.sectPara} style={{padding: "0px", marginTop: '20px'}}>This Privacy Policy explains how RYGB ("we," "us," or "our") collects, uses, and protects your personal information. By using our services, you agree to the terms outlined in this policy. Don't worry, it won't be too long.</p>
+            <p className={styles.sectPara} style={{padding: "0px", marginTop: '20px'}}>This Privacy Policy explains how RYGB (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and protects your personal information. By using our services, you agree to the terms outlined in this policy. Don't worry, it won't be too long.</p>
             <div className={styles.sectdivider}></div>
             <div className={styles.sectHeaderContainer}>
               <div className={styles.sectCircle}>1</div>
@@ -77,7 +77,7 @@ export default function Home() {
               <ul style={{ fontWeight: 'bold' }}>
                 <li>Data is stored in MongoDB Atlas, a cloud database hosting platform.</li>
                 <li>The database is IP-locked to ensure only our authorized access.</li>
-                <li>The API accessing the database is locked with CORS, permitting requests only from our "rygb.tech" domain.</li>
+                <li>The API accessing the database is locked with CORS, permitting requests only from our &quot;rygb.tech&quot; domain.</li>
               </ul>
             </div>
             <div className={styles.sectdivider}></div>
@@ -97,7 +97,7 @@ export default function Home() {
               <div className={styles.sectCircle}>7</div>
               <h1 className={styles.sectHeader}>User Rights</h1>
             </div>
-            <div className={styles.sectPara}>You can access, update, or delete your personal information through your "My RYGB Account" dashboard at <a href="https://accounts.rygb.tech/dash" style={{ color: "orange" }}>https://accounts.rygb.tech/dash</a></div>
+            <div className={styles.sectPara}>You can access, update, or delete your personal information through your &quot;My RYGB Account&quot; dashboard at <a href="https://accounts.rygb.tech/dash" style={{ color: "orange" }}>https://accounts.rygb.tech/dash</a></div>
             <div className={styles.sectdivider}></div>
             <div className={styles.sectHeaderContainer}>
               <div className={styles.sectCircle}>8</div>
