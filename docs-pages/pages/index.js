@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import {useEffect, useState} from 'react'
-import {useRouter} from 'next/router'
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -55,6 +55,7 @@ export default function Home() {
           <div id="sidenavbar" className={styles.leftPanel}>
             <h3>DOCUMENTS</h3>
             <button className={styles.dsbutton} onClick={() => switchDoc("welcome")} style={{ marginTop: "5px" }}>Start: RYGB Docs</button>
+            <button className={styles.dsbutton} onClick={() => switchDoc("policies")} style={{ marginTop: "5px" }}>RYGB Policies</button>
             <button className={styles.dsbutton} onClick={() => switchDoc("privacypolicy")} style={{ marginTop: "5px" }}>RYGB Privacy Policy</button>
           </div>
           <div id="content" style={{ width: "50%", margin: "auto" }} className={styles.content}>
@@ -80,16 +81,41 @@ export default function Home() {
                 <div className={styles.sectCircle}>3</div>
                 <h1 className={styles.sectHeader}>Make changes if you want</h1>
               </div>
-              <div className={styles.sectPara}>RYGB Docs are fully open source. To make changes to the docs, open a pull request <a style={{color: "orange"}} href="https://github.com/RYGBTechnologies/Docs">here</a>.</div>
+              <div className={styles.sectPara}>RYGB Docs are fully open source. To make changes to the docs, open a pull request <a style={{ color: "orange" }} href="https://github.com/RYGBTechnologies/Docs">here</a>.</div>
               <div className={styles.sectdivider}></div>
               <div className={styles.sectHeaderContainer}>
                 <div className={styles.sectCircle}>A</div>
                 <h1 className={styles.sectHeader}>About RYGB Docs</h1>
               </div>
-              <div className={styles.sectPara}>Coded in NextJS<br/>Open Source under MIT Licence<br/><br/>Copyright © 2023<br />© Marcus Mauricio<br/>© RYGB</div>
-              
+              <div className={styles.sectPara}>Coded in NextJS<br />Open Source under MIT Licence<br /><br />Copyright © 2023<br />© Marcus Mauricio<br />© RYGB</div>
             </div>
-            <div id="privacypolicy" style={{display: "none"}}>
+            <div id="policies" style={{ display: "none" }}>
+              <h1 className={styles.header}>RYGB Policies</h1>
+              <p className={styles.subheader}>Last Updated 11/21/2023</p>
+              <p className={styles.subheader}>Applies to all RYGB services</p>
+              <div className={styles.divider} style={{ marginBottom: "20px" }}></div>
+              <h1 className={styles.tapeHeader}>START</h1>
+              <div className={styles.sectHeaderContainer}>
+                <div className={styles.sectCircle}>i</div>
+                <h1 className={styles.sectHeader}>These policies need to be agreed to in order to use services</h1>
+              </div>
+              <div className={styles.sectPara}>The RYGB Privacy Policy and the RYGB Terms of Service need to be agreed to in order to use our services. You can find them below, or by using the left navigation bar.</div>
+              <div className={styles.sectdivider}></div>
+              <p style={{textAlign: "center", marginBottom: "10px"}}>Tap the buttons below to access the policies.</p>
+              <button className={styles.sectbutton} onClick={() => switchDoc("privacypolicy")}>
+                <div className={styles.sectHeaderContainer}>
+                  <div className={styles.sectCircle}>1</div>
+                  <h1 className={styles.sectHeader}>RYGB Privacy Policy</h1>
+                </div>
+              </button>
+              <button className={styles.sectbutton} onClick={() => switchDoc("tos")}>
+                <div className={styles.sectHeaderContainer}>
+                  <div className={styles.sectCircle}>2</div>
+                  <h1 className={styles.sectHeader}>RYGB Terms of Service</h1>
+                </div>
+              </button>
+            </div>
+            <div id="privacypolicy" style={{ display: "none" }}>
               <h1 className={styles.header}>RYGB Privacy Policy</h1>
               <p className={styles.subheader}>Last Updated 11/21/2023</p>
               <p className={styles.subheader}>Applies to your RYGB Account, &quot;My RYGB Account&quot; Dashboard</p>
