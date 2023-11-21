@@ -40,16 +40,16 @@ export default function Home() {
               <p>GDPR and CCPA compliant; users can delete all data with one click.</p>
               <h3>Contact Us:</h3>
               <p>410-596-6619 or mmredblock6@gmail.com</p>
-              <h3>We'll inform you of any changes to this policy when you access our services.</h3>
+              <h3>We&apos;ll inform you of any changes to this policy when you access our services.</h3>
             </div>
             <div className={styles.divider}></div>
-            <p className={styles.sectPara} style={{padding: "0px", marginTop: '20px'}}>This Privacy Policy explains how RYGB (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and protects your personal information. By using our services, you agree to the terms outlined in this policy. Don't worry, it won't be too long.</p>
+            <p className={styles.sectPara} style={{padding: "0px", marginTop: '20px'}}>This Privacy Policy explains how RYGB (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and protects your personal information. By using our services, you agree to the terms outlined in this policy. Don&apos;t worry, it won&apos;t be too long.</p>
             <div className={styles.sectdivider}></div>
             <div className={styles.sectHeaderContainer}>
               <div className={styles.sectCircle}>1</div>
               <h1 className={styles.sectHeader}>Info we collect</h1>
             </div>
-            <div className={styles.sectPara}>We collect your <p style={{ fontWeight: "bold", display: "inline" }}>Name, Phone Number, Email Address, Hashed Password (for account security), Birthday (to verify age and send birthday wishes), Shipping Information (optional; if provided during signup or checkout)</p> to enhance your experience using RYGB services. We don't collect sensitive information, and we never collect or save payment details.</div>
+            <div className={styles.sectPara}>We collect your <p style={{ fontWeight: "bold", display: "inline" }}>Name, Phone Number, Email Address, Hashed Password (for account security), Birthday (to verify age and send birthday wishes), Shipping Information (optional; if provided during signup or checkout)</p> to enhance your experience using RYGB services. We don&apos;t collect sensitive information, and we never collect or save payment details.</div>
             <div className={styles.sectdivider}></div>
             <div className={styles.sectHeaderContainer}>
               <div className={styles.sectCircle}>2</div>
@@ -120,8 +120,8 @@ export default function Home() {
               <div className={styles.sectCircle}>10</div>
               <h1 className={styles.sectHeader}>Notification of Changes</h1>
             </div>
-            <div className={styles.sectPara}>We'll let you know if this page changes when you try to access one of our services.</div>
-            <h1 className={styles.tapeHeader} style={{width: "250px", marginTop: "40px", transform: "rotate(-3deg)"}}>THAT'S IT!</h1>
+            <div className={styles.sectPara}>We&apos;ll let you know if this page changes when you try to access one of our services.</div>
+            <h1 className={styles.tapeHeader} style={{width: "250px", marginTop: "40px", transform: "rotate(-3deg)"}}>THAT&apos;S IT!</h1>
 
 
 
